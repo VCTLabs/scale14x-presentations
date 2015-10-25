@@ -1,6 +1,55 @@
-SCaLE 14x abstracts (submitted) and slides
-==========================================
+============================================
+ SCaLE 14x abstracts (submitted) and slides
+============================================
 
+Open Source ARM Linux Kernels and Graphics Driver Status Update: Have Things Progressed Since Last Year?  (yes, but...)
+=======================================================================================================================
+
+Abstract
+--------
+
+In the past year, although not all "platforms" have enjoyed the same level of activity,
+the mainline kernel and several ARM graphics stacks have made significant progress in
+the open source world.  In addition to several vendors pushing more of their device
+trees into the mainline patch queue, as well as incorporating the ARM DRM headers,
+there are several active projects on the graphics side:
+
+Currently active platforms:
+
+* RaspberryPi/Broadcom VideoCore4 driver and card definition in mesa/rpi-kernel (vc4)
+* Tegra Nouveau/Mesa and kernel patches (in progress upstream: https://github.com/NVIDIA/tegra-nouveau-rootfs)
+* Exynos (Mali) xf86-video-armsoc driver in Xorg, as yet unreleased (tested on Samsung Chromebook)
+  - xf86-video-mali and limadriver projects stale and based on vendor architecture
+
+* iMX (Vivante) etna_viv driver, libdrm, mesa forks (still in flux)
+  - some recent work, some not-so-recent (several forks on github)
+
+* Freedreno (Adreno) new mainline interface, still active (but we have no hardware for testing)
+
+Current but (mostly) inactive platforms
+
+* Tegra20/30 core drm mainlined, xf86-video-opentegra works (performance "okay") but minimal mesa support
+* TI Beagle/PowerVR has basic mainline 4.x kernel support
+  - 3D is still SGX-based (but working), xorg 2D drivers are mostly edgey and/or stale (use fbturbo or fbdev)
+
+.. Note:: Much of the above is available in the Gentoo/ARM overlay kernel-sources
+   and graphics packages (eg, nouveau-sources has tested patches incorporated)
+   as well as Robert C Nelson's `LinuxOnArm wiki`_
+
+.. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/Home
+
+Autotools The Easy Way (no, I'm not kidding...)
+===============================================
+
+
+
+Open Document Formats and reStructuredText (less pain, more geek)
+=================================================================
+
+
+
+Open Source CyberSecurity: Your Tax Dollars At Work
+===================================================
 
 
 Slides
@@ -21,4 +70,4 @@ Notes on .svg slides
 bin directory
 =============
 
-Contains PDF and SVG slides, plus printable handouts for Yocto crash course.
+Contains PDF and SVG slides, reference materials, etc.
