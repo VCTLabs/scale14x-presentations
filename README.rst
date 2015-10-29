@@ -12,7 +12,11 @@ In the past year, although not all "platforms" have enjoyed the same level of ac
 the mainline kernel and several ARM graphics stacks have made significant progress in
 the open source world.  In addition to several vendors pushing more of their device
 trees into the mainline patch queue, as well as incorporating the ARM DRM headers,
-there are several active projects on the graphics side:
+there are several active projects on the graphics side, including Xorg armsoc,
+RaspberryPi VC4 and DRM drivers, Tegra/Nouveau (whole stack), and etna_viv (Vivante)
+for Freescale iMX6 (older iMX2x hardware is "fully mainlined).  Current state of
+software, documentation, and usability is discussed (kernel/drivers and application
+issues, etc).
 
 Currently active platforms:
 
@@ -32,9 +36,12 @@ Current but (mostly) inactive platforms
 * TI Beagle/PowerVR has basic mainline 4.x kernel support
   - 3D is still SGX-based (but working), xorg 2D drivers are mostly edgey and/or stale (use fbturbo or fbdev)
 
+The majority of the above work takes place in either github or FreeDesktop/Xorg repos
+(others are largely stale forks).
+
 .. Note:: Much of the above is available in the Gentoo/ARM overlay kernel-sources
    and graphics packages (eg, nouveau-sources has tested patches incorporated)
-   as well as Robert C Nelson's `LinuxOnArm wiki`_
+   as well as Robert C Nelson's `LinuxOnArm wiki`_.
 
 .. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/Home
 
