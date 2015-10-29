@@ -1,6 +1,6 @@
-============================================
- SCaLE 14x abstracts (submitted) and slides
-============================================
+===================================================
+ SCaLE 14x abstracts (submitted) and slides (later)
+===================================================
 
 Open Source ARM Linux Kernels and Graphics Driver Status Update: Have Things Progressed Since Last Year?  (yes, but...)
 =======================================================================================================================
@@ -59,22 +59,25 @@ Open Source CyberSecurity: Your Tax Dollars At Work
 ===================================================
 
 
-Slides
-------
+'A' is for Appliance, 'B' is for Buildroot
+==========================================
 
-Slides (in PDF) are in the bin directory.  Original .odp files are in their respective topic directories.
+What's that, you're *not* currently in the market for a new way to build OS images for your toaster?
+That's fine, go ahead and keep your NetBSD on your trusty-old-scorcher-of-bread\ :superscript:`1` -- kitchen appliances
+are not exactly the flavor of appliance under discussion. Instead we'll be talking about using
+Buildroot to turn common dev boards (Raspberry Pi, Beaglebone Black, MinnowBoard Max, etc) into 
+embedded Linux "appliances" with a narrow purpose in life.
 
+:superscript:`1` https://www.embeddedarm.com/software/arm-netbsd-toaster.php
 
-Notes on .svg slides
-====================
+The Secret Life of U-Boot
+=========================
 
-* view in a modern browser with javascript enabled
-  * for navigation, use left/right arrows to do the fade-in effects, or up/down arrows to skip them#
-* edit using Inkscape with JessyInk extension installed
-  * JessyInk extension homepage http://code.google.com/p/jessyink/
-  * probably already installed with recent Inkscape versions (look for /usr/share/inkscape/extensions/jessyInk.js)
+Please put on your submarine-commander hat, because it's time to explore some of the
+depths of U-Boot. You don't really believe U-Boot is just an innocent little bootloader 
+that only knows how to start the kernel on your embedded device in exactly the same
+manner day after day, do you? Certainly not! 
 
-bin directory
-=============
-
-Contains PDF and SVG slides, reference materials, etc.
+* U-boot transports valuable images (for merely a small fee) when the local network hardware is on strike
+* U-boot has been spotted doing Jenkins' dirty work of "reprogramming" boards that need to be taught a lesson
+* U-Boot has even been known to conspire with JTAG debuggers to do bare NAND programming without a permit
