@@ -34,7 +34,7 @@ Current but (mostly) inactive platforms
 
 * Tegra20/30 core drm mainlined, xf86-video-opentegra works (performance "okay") but minimal mesa support
 * TI Beagle/PowerVR has basic mainline 4.x kernel support
-  - 3D is still SGX-based (but working), xorg 2D drivers are mostly edgey and/or stale (use fbturbo or fbdev)
+  - 3D is still SGX-based (but working), xorg 2D omap drivers are mostly edgey and/or stale (use fbturbo or fbdev)
 
 The majority of the above work takes place in either github or FreeDesktop/Xorg repos
 (others are largely stale forks).
@@ -45,13 +45,39 @@ The majority of the above work takes place in either github or FreeDesktop/Xorg 
 
 .. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/Home
 
+
+
+Open Document Formatting and reStructuredText (less pain, more geeky fun)
+=========================================================================
+
+Yes, there's Libre/Open Office, and the methods/tools described here are integtrated with the
+.odt format (although its use is not required).  But the point of this talk is not an open source
+office suite, which, although much less annoying than the commercial alternative(s), (is there
+really more than one?) have still acquired some interesting quirks of their own (especially with
+certain imported documents).  No, the theme for today is "Yes, Martha, you can produce high-quality
+production-ready document formats with a text editor and make!"  "No way!"  "Way!"  (more than
+slightly incredulous, Martha listens carefully...)
+
+The core tool in this case is Pyhton Docutils, along with rst2pdf and a text editor (an editor with
+.rst support is handy but not required).  For the same level of geeky graphics fun, we'll also add
+graphviz to the list, along with Inkscape for editing .svg files, and your favorite image tools. If
+you're a console person, have at it from the terminal prompt (you'll just need a viewer for nice
+output) - although a GUI desktop isn't strictly required here, it's likely what most people have
+(and comes preloaded with .pdf and graphics viewers, etc.
+
+We'll also be going step-by step through an example document, and build both the "fancy" figures
+and nicely formatted complete document with a simple makefile.  The source files are ASCII text
+(yes, real source code!) and managed in a git repository, and can include one or more .rst source
+files, one or more .dot files, an optional .style file, and any combination of other image types
+as needed.  Output is typically a single document file (either .pdf or .odt).  The document we'll
+build for this example is even MILSTD-498 DID-compliant!
+
+(written for a general audience and hopefully not too geeky?)
+
+
+
 Autotools The Easy Way (no, I'm not kidding...)
 ===============================================
-
-
-
-Open Document Formats and reStructuredText (less pain, more geek)
-=================================================================
 
 
 
@@ -81,3 +107,5 @@ manner day after day, do you? Certainly not!
 * U-boot transports valuable images (for merely a small fee) when the local network hardware is on strike
 * U-boot has been spotted doing Jenkins' dirty work of "reprogramming" boards that need to be taught a lesson
 * U-Boot has even been known to conspire with JTAG debuggers to do bare NAND programming without a permit
+
+
