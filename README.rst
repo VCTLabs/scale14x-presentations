@@ -5,8 +5,19 @@
 Open Source ARM Linux Kernels and Graphics Driver Status Update: Have Things Progressed Since Last Year?  (yes, but...)
 =======================================================================================================================
 
-Abstract
---------
+Short
+-----
+
+In the past year, although not all "platforms" have enjoyed the same level of activity,
+the mainline kernel and several ARM graphics stacks have made significant progress in
+the open source world.  In addition to several vendors pushing more of their device
+trees into the mainline patch queue, as well as incorporating the ARM DRM headers,
+there are several active projects on the graphics side, including Xorg armsoc,
+RaspberryPi VC4 and DRM drivers, Tegra/Nouveau (whole stack), and etna_viv (Vivante)
+for Freescale iMX6 (older iMX2x hardware is "fully mainlined).
+
+Long
+----
 
 In the past year, although not all "platforms" have enjoyed the same level of activity,
 the mainline kernel and several ARM graphics stacks have made significant progress in
@@ -28,7 +39,7 @@ Currently active platforms:
 * iMX (Vivante) etna_viv driver, libdrm, mesa forks (still in flux)
   - some recent work, some not-so-recent (several forks on github)
 
-* Freedreno (Adreno) new mainline interface, still active (but we have no hardware for testing)
+* Freedreno (Adreno) new mainline interface, still active
 
 Current but (mostly) inactive platforms
 
@@ -41,16 +52,22 @@ The majority of the above work takes place in either github or FreeDesktop/Xorg 
 
 .. Note:: Much of the above is available in the Gentoo/ARM overlay kernel-sources
    and graphics packages (eg, nouveau-sources has tested patches incorporated)
-   as well as Robert C Nelson's `LinuxOnArm wiki`_.
-
-.. _LinuxOnArm wiki: https://eewiki.net/display/linuxonarm/Home
+   as well as Robert C Nelson's `LinuxOnArm wiki <https://eewiki.net/display/linuxonarm/Home>`_.
 
 
 
 Open Document Formatting and reStructuredText (less pain, more geeky fun)
 =========================================================================
 
-Yes, there's Libre/Open Office, and the methods/tools described here are integtrated with the
+Short
+-----
+
+The core tools used for this talk are Python Docutils, graphviz, and make, along with rst2pdf and a text editor (an editor with .rst support is handy but not required).  For the same level of geeky graphics fun, we'll also add Inkscape to the list for editing .svg files, and your favorite image tools.  We'll be going step-by step through an example document production, and build both the figures and nicely formatted complete document with a simple makefile. The source files are ASCII text (yes, real source code!) and managed just like source code (happy dance?).
+
+Long
+----
+
+Yes, there's Libre/Open Office, and the methods/tools described here are integrated with the
 .odt format (although its use is not required).  But the point of this talk is not an open source
 office suite, which, although much less annoying than the commercial alternative(s), (is there
 really more than one?) have still acquired some interesting quirks of their own (especially with
@@ -58,7 +75,7 @@ certain imported documents).  No, the theme for today is "Yes, Martha, you can p
 production-ready document formats with a text editor and make!"  "No way!"  "Way!"  (more than
 slightly incredulous, Martha listens carefully...)
 
-The core tool in this case is Pyhton Docutils, along with rst2pdf and a text editor (an editor with
+The core tools in this case are Python Docutils and make, along with rst2pdf and a text editor (an editor with
 .rst support is handy but not required).  For the same level of geeky graphics fun, we'll also add
 graphviz to the list, along with Inkscape for editing .svg files, and your favorite image tools. If
 you're a console person, have at it from the terminal prompt (you'll just need a viewer for nice
@@ -74,15 +91,6 @@ build for this example is even MILSTD-498 DID-compliant!
 
 (written for a general audience and hopefully not too geeky?)
 
-
-
-Autotools The Easy Way (no, I'm not kidding...)
-===============================================
-
-
-
-Open Source CyberSecurity: Your Tax Dollars At Work
-===================================================
 
 
 'A' is for Appliance, 'B' is for Buildroot
