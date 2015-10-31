@@ -62,7 +62,14 @@ Open Document Formatting and reStructuredText (less pain, more geeky fun)
 Short
 -----
 
-The core tools used for this talk are Python Docutils, graphviz, and make, along with rst2pdf and a text editor (an editor with .rst support is handy but not required).  For the same level of geeky graphics fun, we'll also add Inkscape to the list for editing .svg files, and your favorite image tools.  We'll be going step-by step through an example document production, and build both the figures and nicely formatted complete document with a simple makefile. The source files are ASCII text (yes, real source code!) and managed just like source code (happy dance?).
+The core tools used for this talk are Python Docutils, graphviz, and make,
+along with rst2pdf and a text editor (an editor with .rst support is handy
+but not required).  For the same level of geeky graphics fun, we'll also add
+Inkscape to the list for editing .svg files, and your favorite image tools.
+We'll be going step-by step through an example document production, and build
+both the figures and nicely formatted complete document with a simple makefile.
+The source files are ASCII text (yes, real source code!) and managed just like
+source code (happy dance?).
 
 Long
 ----
@@ -80,9 +87,9 @@ The core tools in this case are Python Docutils and make, along with rst2pdf and
 graphviz to the list, along with Inkscape for editing .svg files, and your favorite image tools. If
 you're a console person, have at it from the terminal prompt (you'll just need a viewer for nice
 output) - although a GUI desktop isn't strictly required here, it's likely what most people have
-(and comes preloaded with .pdf and graphics viewers, etc.
+(and comes preloaded with .pdf and graphics viewers, etc).
 
-We'll also be going step-by step through an example document, and build both the "fancy" figures
+We'll also be going step-by step through an example document production, and build both the "fancy" figures
 and nicely formatted complete document with a simple makefile.  The source files are ASCII text
 (yes, real source code!) and managed in a git repository, and can include one or more .rst source
 files, one or more .dot files, an optional .style file, and any combination of other image types
