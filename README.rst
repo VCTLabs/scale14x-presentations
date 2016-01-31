@@ -2,6 +2,28 @@
  SCaLE 14x abstracts (submitted) and slides (later)
 ===================================================
 
+The Secret Life of U-Boot
+=========================
+
+Abstract
+--------
+
+Please put on your submarine-commander hat, because it's time to explore some of the
+depths of U-Boot. You don't really believe U-Boot is just an innocent little bootloader 
+that only knows how to start the kernel on your embedded device in exactly the same
+manner day after day, do you? Certainly not! 
+
+* U-boot transports valuable images (for merely a small fee) when the local network hardware is on strike
+* U-boot has been spotted doing Jenkins' dirty work of "reprogramming" boards that need to be taught a lesson
+* U-Boot has even been known to conspire with JTAG debuggers to do bare NAND programming without a permit
+
+Slides
+------
+
+.svg format, produced in Inkscape with JessyInk extension (http://wiki.inkscape.org/wiki/index.php/Tools#JessyInk)
+
+bin/U-Boot.svg - view with browser, navigate with arrow keys
+
 Open Source ARM Linux Kernels and Graphics Driver Status Update: Have Things Progressed Since Last Year?  (yes, but...)
 =======================================================================================================================
 
@@ -110,17 +132,4 @@ Buildroot to turn common dev boards (Raspberry Pi, Beaglebone Black, MinnowBoard
 embedded Linux "appliances" with a narrow purpose in life.
 
 :superscript:`1` https://www.embeddedarm.com/software/arm-netbsd-toaster.php
-
-The Secret Life of U-Boot
-=========================
-
-Please put on your submarine-commander hat, because it's time to explore some of the
-depths of U-Boot. You don't really believe U-Boot is just an innocent little bootloader 
-that only knows how to start the kernel on your embedded device in exactly the same
-manner day after day, do you? Certainly not! 
-
-* U-boot transports valuable images (for merely a small fee) when the local network hardware is on strike
-* U-boot has been spotted doing Jenkins' dirty work of "reprogramming" boards that need to be taught a lesson
-* U-Boot has even been known to conspire with JTAG debuggers to do bare NAND programming without a permit
-
 
